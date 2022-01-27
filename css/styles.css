@@ -117,6 +117,11 @@ a {
   margin-left: auto;
   align-items: center;
 }
+.list-connection-item {
+  color: #757575;
+  display: flex;
+  align-items: center;
+}
 .list-connection-item + .list-connection-item {
   margin-left: 50px;
 }
@@ -127,6 +132,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  align-items: center;
 }
 .header-link-mail:hover,
 .header-link-mail:focus,
@@ -134,12 +141,24 @@ a {
 .header-link-tel:focus {
   color: var(--accent-color);
 }
+.list-connection-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 /*----------------------HERO----------------------*/
 .hero {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/page1/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -178,7 +197,11 @@ a {
 }
 .features-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.features-list-item {
+  width: 270px;
 }
 .features-list-item:not(:last-child) {
   margin-right: 30px;
@@ -249,7 +272,38 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
 }
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+.team-socials-item + .team-socials-item {
+  margin-left: 10px;
+}
+.team-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--accent-color);
+}
+.team-socials-icon {
+  fill: #afb1b8;
+}
+.team-socials-icon:hover,
+.team-socials-icon:hover {
+  fill: #ffffff;
+}
+/* .team-socials-link:hover .team-socials-icon {
+  fill: #ffffff;
+} */
 /*----------------------FOOTER---------------------*/
 .footer {
   background-color: #2f303a;
